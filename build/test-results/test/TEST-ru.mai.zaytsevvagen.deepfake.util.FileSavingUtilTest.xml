@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.mai.zaytsevvagen.deepfake.util.FileSavingUtilTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-04-13T18:53:58" hostname="MacBook--Ivan.local" time="0.003">
+  <properties/>
+  <testcase name="saveFileToFileSystem_shouldReturnPathname_whenFileIsValid()" classname="ru.mai.zaytsevvagen.deepfake.util.FileSavingUtilTest" time="0.001"/>
+  <testcase name="saveFileToFileSystem_shouldThrowIllegalArgumentException_whenFileIsEmpty()" classname="ru.mai.zaytsevvagen.deepfake.util.FileSavingUtilTest" time="0.0"/>
+  <testcase name="saveFileToFileSystem_shouldReturnPathname_whenByteArrayIsValid()" classname="ru.mai.zaytsevvagen.deepfake.util.FileSavingUtilTest" time="0.0"/>
+  <testcase name="saveFileToFileSystem_shouldThrowIllegalArgumentException_whenFilenameIsEmpty()" classname="ru.mai.zaytsevvagen.deepfake.util.FileSavingUtilTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

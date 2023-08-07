@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.mai.zaytsevvagen.deepfake.components.FileDeletionSchedulerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-13T18:53:58" hostname="MacBook--Ivan.local" time="0.301">
+  <properties/>
+  <testcase name="testFileDeletionScheduler()" classname="ru.mai.zaytsevvagen.deepfake.components.FileDeletionSchedulerTest" time="0.301"/>
+  <system-out><![CDATA[2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m o.s.t.c.s.AnnotationConfigContextLoaderUtils detectDefaultConfigurationClasses - Could not detect default configuration classes for test class [ru.mai.zaytsevvagen.deepfake.components.FileDeletionSchedulerTest]: FileDeletionSchedulerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m o.s.b.t.c.SpringBootTestContextBootstrapper getOrFindConfigurationClasses - Found @SpringBootConfiguration ru.mai.zaytsevvagen.deepfake.DeppfakeApplication for test class ru.mai.zaytsevvagen.deepfake.components.FileDeletionSchedulerTest
+2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m o.apache.kafka.clients.NetworkClient handleDisconnections - [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Node -1 disconnected.
+2023-04-13 813 21:53:58 ?[31mWARN ?[0;39m o.apache.kafka.clients.NetworkClient processDisconnection - [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-04-13 813 21:53:58 ?[31mWARN ?[0;39m o.apache.kafka.clients.NetworkClient handleServerDisconnect - [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m o.apache.kafka.clients.NetworkClient handleDisconnections - [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Node -1 disconnected.
+2023-04-13 813 21:53:58 ?[31mWARN ?[0;39m o.apache.kafka.clients.NetworkClient processDisconnection - [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-04-13 813 21:53:58 ?[31mWARN ?[0;39m o.apache.kafka.clients.NetworkClient handleServerDisconnect - [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m o.apache.kafka.clients.NetworkClient handleDisconnections - [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Node -1 disconnected.
+2023-04-13 813 21:53:58 ?[31mWARN ?[0;39m o.apache.kafka.clients.NetworkClient processDisconnection - [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-04-13 813 21:53:58 ?[31mWARN ?[0;39m o.apache.kafka.clients.NetworkClient handleServerDisconnect - [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

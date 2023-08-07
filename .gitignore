@@ -1,0 +1,32 @@
+# Maven target directory
+target/
+
+# IntelliJ IDEA
+.idea/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Spring Boot generated files
+spring-configuration-metadata.json
+application*.yml
+application*.properties
+
+# Log files
+logs/
+
+# Gradle files
+.gradle/
+log.*
+
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# System files
+.DS_Store
+Thumbs.db

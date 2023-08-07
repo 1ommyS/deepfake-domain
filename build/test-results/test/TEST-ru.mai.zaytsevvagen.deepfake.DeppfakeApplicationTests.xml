@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.mai.zaytsevvagen.deepfake.DeppfakeApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-13T18:53:58" hostname="MacBook--Ivan.local" time="0.133">
+  <properties/>
+  <testcase name="contextLoads()" classname="ru.mai.zaytsevvagen.deepfake.DeppfakeApplicationTests" time="0.133"/>
+  <system-out><![CDATA[21:53:53.758 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [DeppfakeApplicationTests]: using SpringBootContextLoader
+21:53:53.773 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [ru.mai.zaytsevvagen.deepfake.DeppfakeApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:53:53.775 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.mai.zaytsevvagen.deepfake.DeppfakeApplicationTests]: DeppfakeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:53:53.828 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [DeppfakeApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+21:53:53.945 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/1ommy/deepfake_repos/deepfake-domain/build/classes/java/main/ru/mai/zaytsevvagen/deepfake/DeppfakeApplication.class]
+21:53:53.947 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.mai.zaytsevvagen.deepfake.DeppfakeApplication for test class ru.mai.zaytsevvagen.deepfake.DeppfakeApplicationTests
+21:53:54.072 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [DeppfakeApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, WithSecurityContextTestExecutionListener, EventPublishingTestExecutionListener, ReactorContextTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+21:53:54.073 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [DeppfakeApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-13 813 21:53:54 ?[34mINFO ?[0;39m r.m.z.d.DeppfakeApplicationTests logStarting - Starting DeppfakeApplicationTests using Java 18.0.1.1 with PID 8589 (started by 1ommy in /Users/1ommy/deepfake_repos/deepfake-domain)
+2023-04-13 813 21:53:54 ?[34mINFO ?[0;39m r.m.z.d.DeppfakeApplicationTests logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2023-04-13 813 21:53:55 ?[34mINFO ?[0;39m o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 813 21:53:55 ?[34mINFO ?[0;39m o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2023-04-13 813 21:53:56 ?[34mINFO ?[0;39m com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-1 - Starting...
+2023-04-13 813 21:53:56 ?[34mINFO ?[0;39m com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2b0454d2
+2023-04-13 813 21:53:56 ?[34mINFO ?[0;39m com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-1 - Start completed.
+2023-04-13 813 21:53:56 ?[34mINFO ?[0;39m o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 813 21:53:56 ?[34mINFO ?[0;39m org.hibernate.Version logVersion - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-13 813 21:53:56 ?[34mINFO ?[0;39m SQL dialect logSelectedDialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-13 813 21:53:57 ?[34mINFO ?[0;39m o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 813 21:53:57 ?[34mINFO ?[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 813 21:53:57 ?[31mWARN ?[0;39m o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 813 21:53:57 ?[34mINFO ?[0;39m o.s.s.web.DefaultSecurityFilterChain <init> - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2f46bc25, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72bef795, org.springframework.security.web.context.SecurityContextHolderFilter@365eaef, org.springframework.security.web.header.HeaderWriterFilter@ab11e76, org.springframework.security.web.authentication.logout.LogoutFilter@6fc84468, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9e2b199, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4446e1d9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f4d9c7f, org.springframework.security.web.session.SessionManagementFilter@7672dd7a, org.springframework.security.web.access.ExceptionTranslationFilter@baf87a5, org.springframework.security.web.access.intercept.AuthorizationFilter@3e3c6323]
+2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m o.a.k.c.consumer.ConsumerConfig logAll - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-myGroup-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = myGroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m o.a.kafka.common.utils.AppInfoParser <init> - Kafka version: 3.3.2
+2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m o.a.kafka.common.utils.AppInfoParser <init> - Kafka commitId: b66af662e61082cb
+2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m o.a.kafka.common.utils.AppInfoParser <init> - Kafka startTimeMs: 1681412038326
+2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m o.a.k.clients.consumer.KafkaConsumer subscribe - [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Subscribed to topic(s): ml_topic_get_deepfake
+2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m r.m.z.d.DeppfakeApplicationTests logStarted - Started DeppfakeApplicationTests in 4.231 seconds (process running for 5.511)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

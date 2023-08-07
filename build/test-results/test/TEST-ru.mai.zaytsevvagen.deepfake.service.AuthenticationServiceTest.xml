@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.mai.zaytsevvagen.deepfake.service.AuthenticationServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-04-13T18:53:58" hostname="MacBook--Ivan.local" time="0.143">
+  <properties/>
+  <testcase name="register_returns_authentication_response_with_id()" classname="ru.mai.zaytsevvagen.deepfake.service.AuthenticationServiceTest" time="0.136"/>
+  <testcase name="authenticate_returns_authentication_response_with_id()" classname="ru.mai.zaytsevvagen.deepfake.service.AuthenticationServiceTest" time="0.004"/>
+  <testcase name="authenticate_throws_exception_when_user_not_found()" classname="ru.mai.zaytsevvagen.deepfake.service.AuthenticationServiceTest" time="0.003"/>
+  <system-out><![CDATA[2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m r.m.z.d.s.AuthenticationService register - AuthenticationService.register -- input. Parameter: RegisterRequest: password: password, firstname: John, lastname: Doe, email: Doe
+2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m r.m.z.d.s.AuthenticationService register - AuthenticationService.register. Create user object
+2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m r.m.z.d.s.AuthenticationService register - AuthenticationService.register. User saved to db
+2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m r.m.z.d.s.AuthenticationService authenticate - AuthenticationService.authenticate -- input. AuthenticationRequest: email: john.doe@example.com, password: password
+2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m r.m.z.d.s.AuthenticationService authenticate - AuthenticationService.authenticate auth user
+2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m r.m.z.d.s.AuthenticationService authenticate - AuthenticationService.authenticate. Find user by email. User with id: 1
+2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m r.m.z.d.s.AuthenticationService authenticate - AuthenticationService.authenticate -- input. AuthenticationRequest: email: john.doe@example.com, password: password
+2023-04-13 813 21:53:58 ?[34mINFO ?[0;39m r.m.z.d.s.AuthenticationService authenticate - AuthenticationService.authenticate auth user
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
